@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Antro Pirmas</string>
+    <string name="just_a_button">Just a Button</string>
+    <string name="textview">TextView</string>
 </resources>
