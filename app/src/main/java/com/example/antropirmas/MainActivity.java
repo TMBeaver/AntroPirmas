@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,10 +19,15 @@ public class MainActivity extends AppCompatActivity {
 
         this.TVMain = findViewById(R.id.TVMAin);
 
+        Button ButtOn1= (Button) findViewById(R.id.ButtOn1);
+
+        ButtOn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View view) {
+                TVMain.setText("Changed text");
+            }
+        });
     }
 
-    public void OnButtonClickChangeText (View view) {
-this.TVMain.setText("Changed text");
-
     }
-}
