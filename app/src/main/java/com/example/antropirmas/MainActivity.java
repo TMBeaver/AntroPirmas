@@ -21,13 +21,24 @@ public class MainActivity extends AppCompatActivity {
 
         Button ButtOn1= (Button) findViewById(R.id.ButtOn1);
 
+        Button ButtOff1= (Button) findViewById(R.id.ButtOff1);
+
+
         ButtOn1.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View view) {
                 TVMain.setText("Changed text");
+
+
+        ButtOff1.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View view) {
+                TVMain.setText("Text view");
             }
         });
     }
 
-    }
+    });
+    }}

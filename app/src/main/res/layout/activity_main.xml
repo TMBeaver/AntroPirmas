@@ -10,11 +10,11 @@
         android:id="@+id/ButtOn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/just_a_button"
+        android:onClick="OnButtonClickChangeText"
+        android:text="This_will_change_smt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-    android:onClick="OnButtonClickChangeText"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="DuplicateIds,MissingConstraints" />
 
@@ -31,5 +31,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.459"
         />
+
+    <Button
+        android:id="@+id/ButtOff1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This_will_change_smt_back"
+        android:onClick="OnButtonClickChangeTextBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtOn1"
+        app:layout_constraintVertical_bias="0.484" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
