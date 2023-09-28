@@ -26,20 +26,20 @@ public class MainActivity extends AppCompatActivity {
         Button ButtOff1= (Button) findViewById(R.id.ButtOff1);
 
 
-        ButtOn1.setOnClickListener(new View.OnClickListener() {
+        ButtOn1.setOnClickListener(new View.OnClickListener()  {
             @Override
 
             public void onClick(View view) {
                 TVMain.setText("Changed text");
 
-                int color = ContextCompat.getColor(MainActivity.this, android.R.color.holo_red_dark);
-                TVMain.setTextColor(color);
+
 
                 ButtOff1.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View view) {
                 TVMain.setText("Text view");
+
             }
         });
     }
